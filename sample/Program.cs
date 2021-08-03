@@ -20,9 +20,9 @@ namespace sample
             // create a new document, by default it will create an AutoCad2000 DXF version
             DxfDocument doc = new DxfDocument();
             // an entity
-            //Line entity = new Line(new Vector2(5, 5), new Vector2(10, 5));
+            Line entity = new Line(new Vector2(5, 5), new Vector2(10, 5));
             // add your entities here
-            //doc.Entities.Add(entity);
+            doc.Entities.Add(entity);
             // save to file
             doc.Save(file);
 
