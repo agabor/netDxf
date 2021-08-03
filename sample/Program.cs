@@ -23,6 +23,12 @@ namespace sample
             Line entity = new Line(new Vector2(5, 5), new Vector2(10, 5));
             // add your entities here
             doc.Entities.Add(entity);
+            
+            var text1 = new Text("Sample text", new Vector2(50,20), 0.1);
+            text1.Rotation = 30;
+            text1.Alignment = TextAlignment.MiddleCenter;
+            // add your entities here
+            doc.Entities.Add(text1);
             // save to file
             doc.Save(file);
 
